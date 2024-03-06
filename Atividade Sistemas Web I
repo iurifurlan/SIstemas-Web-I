@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Web</title>
+</head>
+<body>
+    <img src="image/proserver.jpeg.jpeg" alt="Logotipo da empresa ProServe, onde um conjunto de quatro figuras em formato de peças de quebra nas cores: vermelha, azul, amarela e verde que se juntam e formam um círculo " width="150" height="150">
+    
+    <h1>Pró-Serve</h1> 
+    
+    <h3>Proatividade em Servir</h3>
+        <p>Ideia surgiu devido a problemas enfrentados no dia a dia de crianças com deficiencia intelectual em localizar profissionais que atendem as suas necessidades. Consiste em um sistema de banco de profissionais com especialidade em crianças atípicas é uma ferramenta voltada para conectar pais, cuidadores, escolas e instituições com profissionais especialidados em lidar com crianças que apresentam transtornos do neurodesenvolvimento ou são consideradas atípicas .</p> 
+    
+    <h3>Objetivo</h3>    
+    <p>Conectar pais, cuidadores, estabelecimentos de ensino e instituições a profissioncias especializados em lidar com crianças que apresentam distúrbios de desenvolvimento neurológico ou são consideradas atípicas</p>
+    <ol> 
+    <h3>A equipe Pro Serve é composta pelos integrantes conforme abaixo e suas com respectivas funções</h3> 
+        <li>Nara é a nossa Product Owner</li>
+        <li>Iuri atua com o time de Desenvolvedores </li>
+        <li>Henrique é nosso Scrum Master</li>
+        <li>João Flávio é nosso designer UX</li>
+    </ol>
+           
+</body>
+</html>
