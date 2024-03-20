@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulário</h2>
+    <hr />
+    <!-- Inicio do formulário metodo Post para troca de variáveis-->
+    <!-- enctype obrigatório para envio de arquivos -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <!--Gera uma borda no formulário-->
+        <fieldset>
+            <!--Legend faz um título no formulário-->
+            <legend>Dados Cadastrais:</legend>
+            <!--Label efetua o rótulo do campo -->
+            <label>Nome Completo:</label>
+            <!--Input comapo de texto para digitação-->
+            <input type="text" name="nome" id="nome" placeholder= "Ex: Leonel Messi"required /><br/><br/>
+            <label>Endereço:</label>
+            <input type="text" name="endereco" id="endereco" required><br /><br />
+            <label>E-mail:</label>
+            <input type="email" name="email" id="email" required/><br /><br />
+            <label>Senha:</label>
+            <input type="password" name="senha" id="senha" required/><br /><br />
+            <label>Site:</label>
+            <input type="url" name="site" id="site"/><br /><br />
+            <label>Cor:</label>
+            <input type="color" name="cor" id="cor" oninput="mudarCorFormulario()"/><br /><br />
+            <label>Números:</label>
+            <input type="number" name="numero" id="numero" min="0" step="0.5" max="50" value="1" /><br /><br />
+            <Label>Número com Range</Label>
+            <input type="range" name="nrange" id="nrange" min="0" step="1" max="200" /><br /><br />
+            <label>Data Nascimento</label>
+            <input type="date" name="data_nasc" id="data_nasc"><br /><br />
+            <label>Hora</label>
+            <input type="time" name="hora" id="hora"><br /><br />
+            <label>Mês</label>
+            <input type="month" name="mes" id="mes"><br /><br />
+            <label>Semana</label>
+            <input type="week" name="semana" id="semana"><br /><br />
+            <label>Informações Adicionais</label>
+            <textarea cols="80" rows="10" name="informacao" id="informacao"
+              maxlength="400" placeholder="Digite aqui....."></textarea><br /><br />
+            <label>Arquivo</label>  
+            <input type="file" name="arquivo" id="arquivo" accept=".jpg" /><br /><br />
+            <select name="estado" id="estado">
+               <option value="RJ">Rio de Janeiro</option>
+               <!-- O valor que vai para o Banco de dados é o value RJ -->
+               <option value="SP">São Paulo</option>
+               <option value="MG">Minas Gerais</option>
+               <option value="PR">Paraná</option>
+               <option value="SC">Santa Catarina</option>
+            </select>
+            <br /><br />
+            <label>Linguagem de Programação</label>
+            <input type="checkbox" name="dev" id="dev" value="C#" /> C# 
+            <input type="checkbox" name="dev" id="dev" value="Java" /> Java
+            <input type="checkbox" name="dev" id="dev" value="Python" checked/> Python
+            <input type="checkbox" name="dev" id="dev" value="PHP" /> PHP
+            <input type="checkbox" name="dev" id="dev" value="Javascript" /> JS
+            <input type="checkbox" name="dev" id="dev" value="Delphi" /> Delphi
+            <input type="checkbox" name="dev" id="dev" value="Java" /> Java
+            <br /><br />
+
+            <label>Gênero de Filme Preferido</label>
+            <label>
+                <input type="radio" name="filme" value="romance">Romance
+            </label>
+            <label>
+                <input type="radio" name="filme" value="suspense">Suspense
+            </label>
+            <label>
+                <input type="radio" name="filme" value="animacao">Animação
+            </label>
+
+            <br /> <br />    
+            <!-- Botão Enviar -->
+            <input type="submit" value="Enviar" />
+            <!-- Botão Limpar -->
+            <input type=reset value="Limpar"/>
+
+        </fieldset>
+
+    </form> 
+    <script>
+        function mudarCorFormulario() {
+          var cor = document.getElementById("cor").value;
+          document.body.style.backgroundColor = cor;
+          document.body.style.transition = 'background-color 0.5s ease';
+        }
+        </script>   
+    
+</body>
+</html>
