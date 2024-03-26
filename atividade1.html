@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder= "Ex: João Martins"required />
+        <label>E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="joaomartins@hotmail.com"required />
+        <label>Senha:</label>
+        <input type="password" name="senha" id="senha" minlength="8" required/><br /><br />
+        <label>Sexo</label>
+        <label>
+            <input type="radio" name="sexo" value="Masculino" required> Masculino
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="Feminino" required> Feminino
+        </label> 
+    </fieldset>
+    <fieldset>
+        <legend>Endereço</legend>
+        <label>CEP:</label>
+        <input type="text" name="numero" id="numero" placeholder= "14085-550" required />
+        <label>Logradouro:</label>
+        <input type="text" name="endereco" id="endereco" placeholder= "Rua das Flores" required />
+        <label>Numero:</label>
+        <input type="number" name="numero" id="numero" placeholder= "180" required /><br /><br />
+        <label>Complemento:</label>
+        <input type="text" name="complemento" id="complemento" placeholder= "Fundos" required /><br />  
+    </fieldset>
+    <fieldset>
+        <legend>Dados Financeiros</legend>
+        <label>Tipo:</label>
+        <label>
+            <input type="radio" name="nacional" value="nacional" required> Nacional
+        </label>
+        <label>
+            <input type="radio" name="internacional" value="internacional" required> Internacional
+        </label>
+        <label>Bandeira</label>
+        <select name="bandeira" id="bandeira">
+            <option value="Master">Mastercard</option>
+            <option value="Visa">Visa</option>
+            <option value="Elo">Elo</option>
+            <option value="Hiper">Hipercard</option>
+            <option value="American">American Express</option>
+        </select>    
+                <label>Numero do Cartão:</label>    
+        <input type="text" name="numero" id="numero" placeholder="4456128629405526" required /><br /><br />
+        <label>Validade:</label>
+        <input type="month" name="mes" id="mes" placeholder="Setembro de 2028" required />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+    
+    </fieldset>
+    
+    
+</body>
+</html>
