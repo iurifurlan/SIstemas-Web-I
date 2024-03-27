@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(162, 203, 236);
+    }
+</style>
+<body>
+    <img src="logofullcar.html.png" alt="Logo da empresa" width="150" height="60"
+     <fieldset> 
+        <legend><strong><h2>Cadastro de Veículos</h2></strong></legend>
+        <label>Tipo do Veículo:</label>
+        <label>
+            <input type="radio" name="tipo" value="Novo">Novo
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="Usado">Usado
+        </label>
+        <p></p>
+        <label>Categoria:</label>
+        <select name="categoria" id="categoria">
+            <option value="Hatch">Hatch</option>
+            <option value="SUV">SUV</option>
+            <option value="Sedã">Sedã</option>
+            <option value="Picape">Picape</option>
+            <option value="Utilitário">Utilitário</option>
+            <option value="Perua">Perua</option>
+            <option value="Minivan">Minivan</option>
+            <option value="Conversível">Conversivel</option>
+            <option value="Outros">Outros</option>
+        </select>
+        <label>Fabricante:</label>
+            <select name="fabricante" id="fabricante">
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Citroën">Citroën</option>
+                <option value="Renault">Renault</option>    
+                <option value="Kia">Kia</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Outros">Outros</option>
+            </select>
+        <p></p>    
+        <label>Modelo:</label>  
+        <input type="text" name="modelo" id="modelo" placeholder="Toro 1.6 XLS" required />
+        <label>Quilometragem:</label>    
+        <input type="number" name="numero" id="numero" min="0" value="1" placeholder="35200" required/>
+        <p></p>
+        <label>Preço:</label>
+        <input type="valor" name="numero" id="numero" placeholder="40.000,00" required />
+        <labe>Placa:</label>
+        <input type="text" name="placa" id="placa" placeholder="MAR2J56" required />
+        <p></p>
+        <label>Câmbio:</label>
+        <label>
+            <input type="radio" name="cambio" value="Manual"> Manual
+        </label>
+        <label>
+            <input type="radio" name="cambio" value="Automático">Automático
+        </label>
+        <p></p>
+        <label>Blindagem:</label>
+        <label>
+            <input type="radio" name="blindagem" value="Sim">Sim
+        </label>
+        <label>
+            <input type="radio" name="blindagem" value="Não">Não
+        </label>
+        <p></p>
+        <label>Número de portas:</label>
+            <input type="number" name="numero" id="numero" placeholder="4" required />
+        <label>Combustível</label>    
+            <select name="combustível" id="combustível">
+                <option value="Etanol">Etanol</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Flex">Flex</option>
+                <option value="Elétrico">Elétrico</option>
+                <option value="GNV">GNV</option>        
+            </select>    
+        <p></p>    
+        <label>Arquivo:</label>
+        <input type="file" name="arquivo" id="arquivo" accept=".jpg" /><br /><br />
+        <label>Descrição</label>
+        <textarea cols="80" rows="10" name="descricao" id="descricao" maxlength="200" placeholder="Digite aqui....."></textarea><br /><br />       
+            
+    </fieldset>    
+    
+</body>
+</html>
